@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Images for the Modern Web</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>sizes</h1>
+    <img
+      srcset="
+        images/bikes-500w.jpg   500w,
+        images/bikes-1000w.jpg 1000w,
+        images/bikes-2000w.jpg 2000w
+      "
+      sizes="
+            (max-width: 500px) 100px,
+            (max-width: 1000px) 500px
+          "
+      src="images/bikes-2000w.jpg"
+      alt="Bikes in the rain"
+    />
+  </body>
+</html>

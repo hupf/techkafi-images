@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Images for the Modern Web</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 100%;
+        /* width: 50% */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>srcset Width Descriptors</h1>
+    <img
+      srcset="
+        images/bikes-500w.jpg   500w,
+        images/bikes-1000w.jpg 1000w,
+        images/bikes-2000w.jpg 2000w,
+        images/bikes-2000w.jpg 2000w
+      "
+      src="images/bikes-2000w.jpg"
+      alt="Bikes in the rain"
+    />
+  </body>
+</html>

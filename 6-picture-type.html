@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Images for the Modern Web</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      picture,
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Picture with sources & type</h1>
+    <picture>
+      <source type="image/avif" srcset="images/bikes-2000w.avif" />
+      <source type="image/webp" srcset="images/bikes-2000w.webp" />
+      <img src="images/bikes-2000w.jpg" alt="Bikes in the rain" />
+    </picture>
+  </body>
+</html>

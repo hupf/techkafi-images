@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Images for the Modern Web</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>srcset Density Descriptors</h1>
+    <img
+      srcset="
+        images/bikes-500w.jpg  1x,
+        images/bikes-1000w.jpg 2x,
+        images/bikes-2000w.jpg 3x
+      "
+      src="images/bikes-2000w.jpg"
+      alt="Bikes in the rain"
+    />
+  </body>
+</html>
